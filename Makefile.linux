@@ -1,0 +1,14 @@
+CPP=g++
+CPP_FLAGS=-I/usr/include/eigen3 -I/usr/include
+LD_FLAGS=-L/usr/lib/x86_64-linux-gnu -lqqwing
+
+all: sudoku
+
+sudoku: sudoku.o
+	${CPP} -o sudoku sudoku.o ${LD_FLAGS}
+
+sudoku.o: sudoku.cpp
+	${CPP} ${CPP_FLAGS} -c sudoku.cpp -o sudoku.o
+
+clean:
+	-rm sudoku sudoku.o
