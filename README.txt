@@ -17,6 +17,14 @@ For Ubuntu Linux:
 * I added a Makefile.linux; you can rename that default (cygwin) Makefile to something else;
   and then "cp Makefile.linux Makefile" (or just add -f to overwrite the file) and just make.
 
+For Mac:
+
+Steps:
+* brew install eigen  # This seems to install 3.3.9 eigen(3); even newer.
+* Download that tarbal from qqwing website: https://qqwing.com/qqwing-1.3.4.tar.gz, Following the instruction listed on:
+  https://qqwing.com/download.html, for any platforms C++ Source.
+* cp Makefile.mac Makefile
+
 To Compile:
 
 make
